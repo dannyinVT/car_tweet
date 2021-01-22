@@ -18,11 +18,11 @@ print('This program will run in the background and run at an interval at a set t
 
 
 def get_links():
-    r = praw.Reddit(client_id='qvdgpwDQIRMPZA',
-                    client_secret='OLtqRL4DyLOKDm5zraFILo1YHgFqwg',
+    r = praw.Reddit(client_id='xw6Q0jn3xnid3g',
+                    client_secret='BZ6NF1wzQQKwl1adG70tzaGwVkkjhg',
                     user_agent='twitter_carporn',
-                    username='notbecausewhat',
-                    password='rovcyx-1Goxni-byqwiq')
+                    username='twitter_carporn_bot',
+                    password='Q6eErYJz6j2cxKS')
     print(f'Logged in as {r.user.me()}')
 
     sub = r.subreddit('carporn')
