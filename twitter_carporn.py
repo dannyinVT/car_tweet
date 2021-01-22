@@ -21,7 +21,7 @@ def get_links():
     r = praw.Reddit(client_id='xw6Q0jn3xnid3g',
                     client_secret='BZ6NF1wzQQKwl1adG70tzaGwVkkjhg',
                     user_agent='twitter_carporn',
-                    username='twitter_carporn_bot',
+                    username='carporn_twitter_bot',
                     password='Q6eErYJz6j2cxKS')
     print(f'Logged in as {r.user.me()}')
 
