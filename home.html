@@ -1,0 +1,1027 @@
+
+<!DOCTYPE html>
+<!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>
+            
+    Python Web Scraping - JimShapedCoding
+
+        </title>
+
+
+        <meta name="description" content="Jim Shaped Coding, Programming and Web Development Tutorials">
+        <meta name="author" content="JimShapedCoding">
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <link rel="shortcut icon" href="/static/main/img/favicon.png">
+        <!-- END Icons -->
+
+        <!-- Stylesheets -->
+        <!-- Bootstrap is included in its original form, unaltered -->
+        <link href="/static/main/css/plugins.css" rel="stylesheet">
+
+        <!-- Related styles of various icon packs and plugins -->
+        <link href="/static/main/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- The main stylesheet of this template. All Bootstrap overwrites are defined in here -->
+        <link href="/static/main/css/main.css" rel="stylesheet">
+
+        <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
+        <link href="/static/main/css/themes.css" rel="stylesheet">
+        <!-- END Stylesheets -->
+
+        <!-- Modernizr (browser feature detection library) -->
+        <script src="/static/main/js/vendor/modernizr-3.3.1.min.js"></script>
+        <!-- Styles for JSC / OVERRIDE THE STYLES OF APPUI -->
+        <style>
+            .jsc-apply-ripple{
+                height: 98px; width: 98px; top: -33px; left: 3.42188px;
+            }
+            .hi-check{
+                margin-right: 10px
+            }
+            .gi-fire{
+                margin-right: 10px
+            }
+            .gi-play{
+                margin-right: 10px;
+            }
+
+        </style>
+        <!-- END Styles for JSC / OVERRIDE THE STYLES OF APPUI -->
+    </head>
+
+    <body>
+        <div id="page-wrapper" class="page-loading">
+            <!-- Preloader -->
+            <!-- Preloader functionality (initialized in js/app.js) - pageLoading() -->
+            <!-- Used only if page preloader enabled from inc/config (PHP version) or the class 'page-loading' is added in #page-wrapper element (HTML version) -->
+            <div class="preloader">
+                <div class="inner">
+                    <!-- Animation spinner for all modern browsers -->
+                    <div class="preloader-spinner themed-background hidden-lt-ie10"></div>
+
+                    <!-- Text for IE9 -->
+                    <h3 class="text-primary visible-lt-ie10"><strong>Loading...</strong></h3>
+                </div>
+            </div>
+            <!-- END Preloader -->
+
+            <!-- Page Container -->
+            <div id="page-container" class="header-fixed-top sidebar-visible-lg-full">
+                <!-- Main Sidebar -->
+                <div id="sidebar">
+                    <!-- Sidebar Brand -->
+                    <div id="sidebar-brand" class="themed-background">
+                        <a href="/home/" class="sidebar-title">
+                            <i class="fa fa-code"></i> <span class="sidebar-nav-mini-hide">Jim<strong>ShapedCoding</strong></span>
+                        </a>
+                    </div>
+                    <!-- END Sidebar Brand -->
+
+                    <!-- Wrapper for scrolling functionality -->
+                    <div id="sidebar-scroll">
+                        <!-- Sidebar Content -->
+                        <div class="sidebar-content">
+                            <!-- Sidebar Navigation -->
+                            <ul class="sidebar-nav">
+                                <li>
+                                    <a href="/home/" class="sidebar-nav-menu">
+                                        <div id="sidebar-full-logo" class="border-bottom-sidelogo">
+                                            <img src="/static/main/img/icon-192.png" alt="image">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="sidebar-nav-menu">
+                                        <i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i>
+                                        <i class="gi gi-display sidebar-nav-icon"></i>
+                                        <span class="sidebar-nav-mini-hide">
+                                            Courses
+                                        </span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="/courses/" data-toggle="tooltip" data-original-title="See All Courses!" data-placement="right">
+                                                <span class="btn-ripple animate jsc-apply-ripple"></span>
+                                                <i class="gi gi-fire" style="color: #FFF;"></i>
+                                                <strong>See All Courses!</strong>
+                                            </a>
+                                        </li>
+                                        
+                                            <li>
+                                                
+                                                     <a href="/courses/Django%20Tutorial%20-%20Building%20a%20Market%20Website" data-toggle="tooltip" data-original-title="Django Tutorial - Building a Market Website" data-placement=right>
+                                                        <span class="btn-ripple animate jsc-apply-ripple"></span>
+                                                         <i class="hi hi-check" style="color: #006627"></i>
+                                                         Django Tutorial - Bu  ...
+                                                     </a>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                
+                                                    <a href="/courses/Flask%20Full%20Series" data-toggle="tooltip" data-original-title="Flask Full Series" data-placement=right>
+                                                        <span class="btn-ripple animate jsc-apply-ripple"></span>
+                                                        <i class="hi hi-check" style="color: #af39fe"></i>
+                                                        Flask Full Series
+                                                    </a>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                
+                                                    <a href="/courses/Python%20Web%20Scraping" data-toggle="tooltip" data-original-title="Python Web Scraping" data-placement=right>
+                                                        <span class="btn-ripple animate jsc-apply-ripple"></span>
+                                                        <i class="hi hi-check" style="color: #00d15b"></i>
+                                                        Python Web Scraping
+                                                    </a>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                
+                                                     <a href="/courses/Python%20Intermediate%20tutorials" data-toggle="tooltip" data-original-title="Python Intermediate tutorials" data-placement=right>
+                                                        <span class="btn-ripple animate jsc-apply-ripple"></span>
+                                                         <i class="hi hi-check" style="color: #0495b9"></i>
+                                                         Python Intermediate   ...
+                                                     </a>
+                                                
+                                            </li>
+                                        
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-nav-menu">
+                                        <i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i>
+                                        <i class="gi gi-facetime_video sidebar-nav-icon"></i>
+                                        <span class="sidebar-nav-mini-hide">
+                                            Videos
+                                        </span>
+                                    </a>
+                                    <ul>
+                                        
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- END Sidebar Navigation -->
+                        </div>
+                        <!-- END Sidebar Content -->
+                    </div>
+                    <!-- END Wrapper for scrolling functionality -->
+
+                    <!-- Sidebar Extra Info -->
+                    <div id="sidebar-extra-info" class="sidebar-content sidebar-nav-mini-hide">
+                        <div class="text-center">
+                            <small>Crafted with <i class="fa fa-heart text-danger"></i> by <a href="https://1.envato.market/ydb" target="_blank">pixelcave</a></small><br>
+                            <small><span id="year-copy"></span> &copy; <a href="https://1.envato.market/DXa" target="_blank">AppUI</a></small><br>
+                            <small><span id="year-copy"></span> &copy; <a href="#" target="_blank">Site Content by JimShapedCoding</a></small>
+                        </div>
+                    </div>
+                    <!-- END Sidebar Extra Info -->
+                </div>
+                <!-- END Main Sidebar -->
+
+                <!-- Main Container -->
+                <div id="main-container">
+                    <!-- Header -->
+                    <header class="navbar navbar-inverse navbar-fixed-top">
+                        <!-- Left Header Navigation -->
+                        <ul class="nav navbar-nav-custom">
+                            <!-- Main Sidebar Toggle Button -->
+                            <li>
+                                <a href="javascript:void(0)" onclick="App.sidebar('toggle-sidebar');this.blur();">
+                                    <i class="fa fa-ellipsis-v fa-fw animation-fadeInRight" id="sidebar-toggle-mini"></i>
+                                    <i class="fa fa-bars fa-fw animation-fadeInRight" id="sidebar-toggle-full"></i>
+                                </a>
+                            </li>
+                            <!-- END Main Sidebar Toggle Button -->
+
+                            <!-- Header Link -->
+                            <li class="hidden-xs animation-fadeInQuick">
+                                <a href="/home/"><strong>HOME</strong></a>
+                            </li>
+
+                            <li class="hidden-xs animation-fadeInQuick">
+                                <a href="/about/"><strong>ABOUT</strong></a>
+                            </li>
+
+                            <!-- END Header Link -->
+                        </ul>
+                        <!-- END Left Header Navigation -->
+
+                        <!-- Right Header Navigation -->
+                        <ul class="nav navbar-nav-custom pull-right">
+                            <!-- Social Media Dropdown -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                                    <div style="font-size: large; margin-right: 15px" class="pull-left"><strong>FOLLOW US!</strong></div> <img src="/static/main/img/media/social-64.png" alt="avatar" >
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="dropdown-header">
+                                        <strong>Follow Us!</strong>
+                                    </li>
+                                    <li>
+                                        <a onclick="openInNewTab('https://www.youtube.com/channel/UCU8d7rcShA7MGuDyYH1aWGg')" href="" >
+                                            <img class="pull-right" src="/static/main/img/media/youtube-16.png" alt="avatar">
+                                            Youtube
+                                        </a>
+                                    </li>
+                                    <li class="divider"><li>
+                                    <li>
+                                        <a onclick="openInNewTab('https://www.instagram.com/jimshapedcoding//')" href="" >
+                                            <img class="pull-right" src="/static/main/img/media/instagram-16.png" alt="avatar">
+                                            Instagram
+                                        </a>
+                                    </li>
+                                    <li class="divider"><li>
+                                    <li>
+                                        <a onclick="openInNewTab('https://www.facebook.com/jimshapedcoding/')" href="" >
+                                            <img class="pull-right" src="/static/main/img/media/facebook-16.png" alt="avatar">
+                                            Facebook
+                                        </a>
+                                    </li>
+                                    <li class="divider"><li>
+                                    <li>
+                                        <a onclick="openInNewTab('https://discord.com/invite/aMgcPD9')" href="" >
+                                            <img class="pull-right" src="/static/main/img/media/discord-16.png" alt="avatar">
+                                            Discord
+                                        </a>
+                                    </li>
+                                    <li class="divider"><li>
+                                    <li>
+                                        <a onclick="openInNewTab('https://twitter.com/jimshapedcoding')" href="" >
+                                            <img class="pull-right" src="/static/main/img/media/twitter-16.png" alt="avatar">
+                                            Twitter
+                                        </a>
+                                    </li>
+                                    <li class="divider"><li>
+                                    <li>
+                                        <a onclick="openInNewTab('https://github.com/jimdevops19/')" href="" >
+                                            <img class="pull-right" src="/static/main/img/media/github-16.png" alt="avatar">
+                                            Github
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Social Media Dropdown -->
+                        </ul>
+                        <!-- END Right Header Navigation -->
+                    </header>
+                    <!-- END Header -->
+                    
+<!-- Page content -->
+<div id="page-content" class="inner-sidebar-left">
+    <!-- Page Secondary Header -->
+    <div class="content-header">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="header-section">
+                    <h1>
+                       Python Web Scraping
+                    </h1>
+                </div>
+            </div>
+            <div class="col-sm-6 hidden-xs">
+                <div class="header-section">
+                    <ul class="breadcrumb breadcrumb-top">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END  Page Secondary Header -->
+    <!-- Inner Sidebar -->
+<div id="page-content-sidebar">
+    <!-- Collapsible Options -->
+    <a href="javascript:void(0)" class="btn btn-block btn-default visible-xs" data-toggle="collapse" data-target="#_media">Media Box</a>
+    <div id="_media" class="collapse navbar-collapse remove-padding">
+        <!-- Filter -->
+        <div class="block-section">
+            <h4 class="inner-sidebar-header">
+                Course Content:
+            </h4>
+            <!-- Filter by Type links -->
+            <!-- Custom files functionality is initialized in js/pages/appMedia.js -->
+            <!-- Add the category value you want each link in .media-filter to filter out in its data-category attribute. Add the value 'all' to show all items -->
+            <ul class="nav nav-pills nav-stacked nav-icons media-filter">
+                
+                    
+                        <li>
+                            
+                                <a id="16-tab" href="javascript:void(0)" data-category="16_media">
+                                    <i class="fa fa-fw fa-folder text-primary icon-push"></i> <strong>Ep. 1 - Web Scraping - Scraping Basics</strong>
+                                </a>
+                            
+                        </li>
+                    
+                
+                    
+                        <li>
+                            
+                                <a id="17-tab" href="javascript:void(0)" data-category="17_media">
+                                    <i class="fa fa-fw fa-folder text-primary icon-push"></i> <strong>Ep. 2 - Web Scraping - Requests &amp; Data Filtrations</strong>
+                                </a>
+                            
+                        </li>
+                    
+                
+                    
+                        <li>
+                            
+                                <a id="18-tab" href="javascript:void(0)" data-category="18_media">
+                                    <i class="fa fa-fw fa-folder text-primary icon-push"></i> <strong>Ep. 3 - Web Scraping - Functionalities for Scraping Project</strong>
+                                </a>
+                            
+                        </li>
+                    
+                
+            </ul>
+            <!-- END Filter by Type links -->
+        </div>
+        <!-- END Filter -->
+    </div>
+    <!-- END Collapsible Options -->
+</div>
+<!-- END Inner Sidebar -->
+
+    <div class="row media-filter-items">
+        
+            
+                <div class="block">
+   <div class="media-items animation-fadeInQuick2" data-category="16_media">
+      <div class="block-title">
+         <ul class="nav nav-tabs" data-toggle="tabs">
+            <li class="active"><a href="#16_overview">Overview</a></li>
+             
+                 <li><a href="#16_code">Code</a></li>
+             
+                 <li><a href="#16_exercise">Exercise</a></li>
+             
+                 <li><a href="#16_answer">Answer</a></li>
+             
+             <li class="pull-right text-muted"><a><em>Web Scraping - Scraping Basics</em></a></li>
+         </ul>
+      </div>
+      <!-- END Forum Tabs -->
+      <!-- Tab Content -->
+      <div class="tab-content animation-fadeInQuick2">
+         <!-- Forum -->
+         <div class="tab-pane active" id="16_overview">
+            <div class="row" >
+                <div class="col-lg-12">
+                    <div class="widget-image widget-image-sm">
+                        <img src="https://res.cloudinary.com/jimshapedcoding/image/upload/v1603104959/Web_Scraping_1_Thumbnail_00011_oloefv.jpg" alt="image">
+                        <div class="widget-image-content text-center">
+                            
+                                <h1 class="widget-heading text-light"><strong>Episode 1</strong></h1>
+                                 <h2 class="widget-heading text-light-op"><em>Web Scraping - Scraping Basics</em></h2>
+                            
+                                <h4 class="widget-heading text-light-op"><em>Scraping Basics</em></h4>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-6">
+                  <!-- Intro Category -->
+                  <div class="widget">
+                     <div class="widget-content widget-content-full border-bottom">
+                        <div class="row text-center">
+                            <a href="/courses/">
+                                <div class="col-xs-12 push-inner-top-bottom border-right">
+                                    <h3 class="widget-heading">
+                                        <i class="gi gi-group gi-user themed-color-social push"></i>
+                                        <br>
+                                        <small>
+                                            Check out more <strong>Courses </strong>
+                                        </small>
+                                    </h3>
+                                </div>
+                            </a>
+                        </div>
+                     </div>
+                     <div class="widget-content">
+                        <h4 style="text-align: left; padding-left: 10px">About this video</h4>
+                        <pre>On this one, we will cover the basics, 
+such as reading from local HTML files and using the Beautiful Soup library
+with the parser method of lxml.
+And of course, much more to come in this series this week!</pre>
+                     </div>
+                  </div>
+                  <!-- END Intro Category -->
+               </div>
+               <div class="col-lg-6">
+                  <div class="widget">
+                     <div class="widget-content widget-content-full border-bottom">
+                        <div class="row text-center">
+                            <a href="" onclick='openInNewTab("https://www.youtube.com/watch?v=muj5vrObtDs")'>
+                                <div class="col-xs-12 push-inner-top-bottom border-left">
+                                    <h3 class="widget-heading"><i style="color:#ff0000" class="gi gi-facetime_video push"></i> <br><small><strong>Watch</strong> on Youtube</small></h3>
+                                </div>
+                            </a>
+                        </div>
+                     </div>
+                     <div class="widget-content">
+                         <iframe width="560" height="318" src="https://www.youtube.com/embed/muj5vrObtDs"
+                                 allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                                 picture-in-picture" allowfullscreen>
+                         </iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- END Forum -->
+         <!-- Topics -->
+         
+         <div class="tab-pane" id="16_code">
+            <div class="row">
+                
+                    <div class="col-md-4 col-lg-3">
+                        <!-- Menu Block -->
+                        <div class="block full">
+                            <!-- Menu Title -->
+                            <div class="block-title clearfix">
+                                <div class="block-options pull-right">
+                                    <a href="javascript:void(0)" class="btn btn-effect-ripple btn-default" data-toggle="tooltip" title="Code"><i class="fa fa-code"></i></a>
+                                </div>
+                                <h2 style="margin-left: 10px">Code</h2>
+                            </div>
+                            <!-- END Menu Title -->
+
+                            <!-- Menu Content -->
+                            <ul class="nav nav-pills nav-stacked" data-toggle="tabs">
+                                
+                                    
+                                        
+                                            <li class="active">
+                                                <a href="#code-17"><i class="fa fa-file-text fa-ticket icon-push"></i> <strong>home.html</strong></a>
+                                            </li>
+                                        
+                                    
+                                
+                            </ul>
+                            <!-- END Menu Content -->
+                        </div>
+                        <!-- END Menu Block -->
+                    </div>
+                    <div class="col-md-8 col-lg-9" >
+                        <!-- Tabs Content -->
+                        <div class="tab-content" id="16-code-content">
+                            
+                                
+                                    
+                                        <div class="tab-pane active animation-fadeInQuick2" id="code-17">
+                                            <pre>&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+   &lt;head&gt;
+      &lt;meta charset=&quot;utf-8&quot;&gt;
+      &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css&quot; integrity=&quot;sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z&quot; crossorigin=&quot;anonymous&quot;&gt;
+      &lt;title&gt;My Courses&lt;/title&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;h1&gt;Hello, Start Learning!&lt;/h1&gt;
+      &lt;div class=&quot;card&quot; id=&quot;card-python-for-beginners&quot;&gt;
+         &lt;div class=&quot;card-header&quot;&gt;
+            Python
+         &lt;/div&gt;
+         &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Python for beginners&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;If you are new to Python, this is the course that you should buy!&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Start for 20$&lt;/a&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot; id=&quot;card-python-web-development&quot;&gt;
+         &lt;div class=&quot;card-header&quot;&gt;
+            Python
+         &lt;/div&gt;
+         &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Python Web Development&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;If you feel enough confident with python, you are ready to learn how to create your own website!&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Start for 50$&lt;/a&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot; id=&quot;card-python-machine-learning&quot;&gt;
+         &lt;div class=&quot;card-header&quot;&gt;
+            Python
+         &lt;/div&gt;
+         &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Python Machine Learning&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Become a Python Machine Learning master!&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Start for 100$&lt;/a&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</pre>
+                                        </div>
+                                    
+                                
+                            
+                        </div>
+                        <!-- END Tabs Content -->
+                    </div>
+                
+            </div>
+         </div>
+         
+         <div class="tab-pane" id="16_exercise">
+            <div class="row">
+                
+                    <div class="col-md-4 col-lg-3">
+                        <!-- Menu Block -->
+                        <div class="block full">
+                            <!-- Menu Title -->
+                            <div class="block-title clearfix">
+                                <div class="block-options pull-right">
+                                    <a href="javascript:void(0)" class="btn btn-effect-ripple btn-default" data-toggle="tooltip" title="Exercise"><i class="fa fa-code"></i></a>
+                                </div>
+                                <h2 style="margin-left: 10px">Exercise</h2>
+                            </div>
+                            <!-- END Menu Title -->
+
+                            <!-- Menu Content -->
+                            <ul class="nav nav-pills nav-stacked" data-toggle="tabs">
+                                
+                                    
+                                
+                            </ul>
+                            <!-- END Menu Content -->
+                        </div>
+                        <!-- END Menu Block -->
+                    </div>
+                    <div class="col-md-8 col-lg-9" >
+                        <!-- Tabs Content -->
+                        <div class="tab-content" id="16-exercise-content">
+                            
+                                
+                            
+                        </div>
+                        <!-- END Tabs Content -->
+                    </div>
+                
+            </div>
+         </div>
+         
+         <div class="tab-pane" id="16_answer">
+            <div class="row">
+                
+                    <div class="col-md-4 col-lg-3">
+                        <!-- Menu Block -->
+                        <div class="block full">
+                            <!-- Menu Title -->
+                            <div class="block-title clearfix">
+                                <div class="block-options pull-right">
+                                    <a href="javascript:void(0)" class="btn btn-effect-ripple btn-default" data-toggle="tooltip" title="Answer"><i class="fa fa-code"></i></a>
+                                </div>
+                                <h2 style="margin-left: 10px">Answer</h2>
+                            </div>
+                            <!-- END Menu Title -->
+
+                            <!-- Menu Content -->
+                            <ul class="nav nav-pills nav-stacked" data-toggle="tabs">
+                                
+                                    
+                                
+                            </ul>
+                            <!-- END Menu Content -->
+                        </div>
+                        <!-- END Menu Block -->
+                    </div>
+                    <div class="col-md-8 col-lg-9" >
+                        <!-- Tabs Content -->
+                        <div class="tab-content" id="16-answer-content">
+                            
+                                
+                            
+                        </div>
+                        <!-- END Tabs Content -->
+                    </div>
+                
+            </div>
+         </div>
+         
+         <!-- END Topics -->
+         <!-- Discussion -->
+         <!-- END Discussion -->
+      </div>
+      <!-- END Tab Content -->
+   </div>
+</div>
+
+<script type="text/javascript">
+    //Media box content OVERRIDES:
+
+    //1) Render the nothing.html if there is no files under one of the types
+    nothingHTML = '<div class="row text-center"> <div class="col-lg-12"> <h1 class="text-dark animation-fadeInQuick2"><strong>Feeling Lost?</strong></h1> <h2 class="text-muted animation-fadeInQuick2"><em>We sorry but nothing to display on this page</em></h2> </div> </div>';
+    
+        videoSourceFileContentID = document.getElementById("16-code-content");
+
+       if (!(videoSourceFileContentID.hasChildNodes())) {
+            videoSourceFileContentID.innerHTML = nothingHTML;
+       }
+    
+        videoSourceFileContentID = document.getElementById("16-exercise-content");
+
+       if (!(videoSourceFileContentID.hasChildNodes())) {
+            videoSourceFileContentID.innerHTML = nothingHTML;
+       }
+    
+        videoSourceFileContentID = document.getElementById("16-answer-content");
+
+       if (!(videoSourceFileContentID.hasChildNodes())) {
+            videoSourceFileContentID.innerHTML = nothingHTML;
+       }
+    
+
+</script>
+
+            
+        
+            
+                <div class="block">
+   <div class="media-items animation-fadeInQuick2" data-category="17_media">
+      <div class="block-title">
+         <ul class="nav nav-tabs" data-toggle="tabs">
+            <li class="active"><a href="#17_overview">Overview</a></li>
+             
+                 <li><a href="#17_code">Code</a></li>
+             
+                 <li><a href="#17_exercise">Exercise</a></li>
+             
+                 <li><a href="#17_answer">Answer</a></li>
+             
+             <li class="pull-right text-muted"><a><em>Web Scraping - Requests &amp; Data Filtrations</em></a></li>
+         </ul>
+      </div>
+      <!-- END Forum Tabs -->
+      <!-- Tab Content -->
+      <div class="tab-content animation-fadeInQuick2">
+         <!-- Forum -->
+         <div class="tab-pane active" id="17_overview">
+            <div class="row" >
+                <div class="col-lg-12">
+                    <div class="widget-image widget-image-sm">
+                        <img src="https://res.cloudinary.com/jimshapedcoding/image/upload/v1603104959/Web_Scraping_2_Thumbnail_00011_00011_bdohl5.jpg" alt="image">
+                        <div class="widget-image-content text-center">
+                            
+                                <h1 class="widget-heading text-light"><strong>Episode 2</strong></h1>
+                                 <h2 class="widget-heading text-light-op"><em>Web Scraping - Requests &amp; Data Filtrations</em></h2>
+                            
+                                <h4 class="widget-heading text-light-op"><em>Requests &amp; Data Filtrations</em></h4>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-6">
+                  <!-- Intro Category -->
+                  <div class="widget">
+                     <div class="widget-content widget-content-full border-bottom">
+                        <div class="row text-center">
+                            <a href="/courses/">
+                                <div class="col-xs-12 push-inner-top-bottom border-right">
+                                    <h3 class="widget-heading">
+                                        <i class="gi gi-group gi-user themed-color-social push"></i>
+                                        <br>
+                                        <small>
+                                            Check out more <strong>Courses </strong>
+                                        </small>
+                                    </h3>
+                                </div>
+                            </a>
+                        </div>
+                     </div>
+                     <div class="widget-content">
+                        <h4 style="text-align: left; padding-left: 10px">About this video</h4>
+                        <pre>On this one, we will cover how to request information from a real website, 
+what are the best methods to filter the exact information you want.</pre>
+                     </div>
+                  </div>
+                  <!-- END Intro Category -->
+               </div>
+               <div class="col-lg-6">
+                  <div class="widget">
+                     <div class="widget-content widget-content-full border-bottom">
+                        <div class="row text-center">
+                            <a href="" onclick='openInNewTab("https://www.youtube.com/watch?v=peShAzzZyTQ")'>
+                                <div class="col-xs-12 push-inner-top-bottom border-left">
+                                    <h3 class="widget-heading"><i style="color:#ff0000" class="gi gi-facetime_video push"></i> <br><small><strong>Watch</strong> on Youtube</small></h3>
+                                </div>
+                            </a>
+                        </div>
+                     </div>
+                     <div class="widget-content">
+                         <iframe width="560" height="318" src="https://www.youtube.com/embed/peShAzzZyTQ"
+                                 allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                                 picture-in-picture" allowfullscreen>
+                         </iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- END Forum -->
+         <!-- Topics -->
+         
+         <div class="tab-pane" id="17_code">
+            <div class="row">
+                
+                     <div class="row text-center">
+    <div class="col-lg-12">
+        <h1 class="text-dark animation-fadeInQuick2"><strong>Feeling Lost?</strong></h1>
+        <h2 class="text-muted animation-fadeInQuick2"><em>We sorry but nothing to display on this page</em></h2>
+    </div>
+</div>
+
+                
+            </div>
+         </div>
+         
+         <div class="tab-pane" id="17_exercise">
+            <div class="row">
+                
+                     <div class="row text-center">
+    <div class="col-lg-12">
+        <h1 class="text-dark animation-fadeInQuick2"><strong>Feeling Lost?</strong></h1>
+        <h2 class="text-muted animation-fadeInQuick2"><em>We sorry but nothing to display on this page</em></h2>
+    </div>
+</div>
+
+                
+            </div>
+         </div>
+         
+         <div class="tab-pane" id="17_answer">
+            <div class="row">
+                
+                     <div class="row text-center">
+    <div class="col-lg-12">
+        <h1 class="text-dark animation-fadeInQuick2"><strong>Feeling Lost?</strong></h1>
+        <h2 class="text-muted animation-fadeInQuick2"><em>We sorry but nothing to display on this page</em></h2>
+    </div>
+</div>
+
+                
+            </div>
+         </div>
+         
+         <!-- END Topics -->
+         <!-- Discussion -->
+         <!-- END Discussion -->
+      </div>
+      <!-- END Tab Content -->
+   </div>
+</div>
+
+<script type="text/javascript">
+    //Media box content OVERRIDES:
+
+    //1) Render the nothing.html if there is no files under one of the types
+    nothingHTML = '<div class="row text-center"> <div class="col-lg-12"> <h1 class="text-dark animation-fadeInQuick2"><strong>Feeling Lost?</strong></h1> <h2 class="text-muted animation-fadeInQuick2"><em>We sorry but nothing to display on this page</em></h2> </div> </div>';
+    
+        videoSourceFileContentID = document.getElementById("17-code-content");
+
+       if (!(videoSourceFileContentID.hasChildNodes())) {
+            videoSourceFileContentID.innerHTML = nothingHTML;
+       }
+    
+        videoSourceFileContentID = document.getElementById("17-exercise-content");
+
+       if (!(videoSourceFileContentID.hasChildNodes())) {
+            videoSourceFileContentID.innerHTML = nothingHTML;
+       }
+    
+        videoSourceFileContentID = document.getElementById("17-answer-content");
+
+       if (!(videoSourceFileContentID.hasChildNodes())) {
+            videoSourceFileContentID.innerHTML = nothingHTML;
+       }
+    
+
+</script>
+
+            
+        
+            
+                <div class="block">
+   <div class="media-items animation-fadeInQuick2" data-category="18_media">
+      <div class="block-title">
+         <ul class="nav nav-tabs" data-toggle="tabs">
+            <li class="active"><a href="#18_overview">Overview</a></li>
+             
+                 <li><a href="#18_code">Code</a></li>
+             
+                 <li><a href="#18_exercise">Exercise</a></li>
+             
+                 <li><a href="#18_answer">Answer</a></li>
+             
+             <li class="pull-right text-muted"><a><em>Web Scraping - Functionalities for Scraping Project</em></a></li>
+         </ul>
+      </div>
+      <!-- END Forum Tabs -->
+      <!-- Tab Content -->
+      <div class="tab-content animation-fadeInQuick2">
+         <!-- Forum -->
+         <div class="tab-pane active" id="18_overview">
+            <div class="row" >
+                <div class="col-lg-12">
+                    <div class="widget-image widget-image-sm">
+                        <img src="https://res.cloudinary.com/jimshapedcoding/image/upload/v1603104959/Web_Scraping_3_Thumbnail_00011_00011_00011_ec1fyz.jpg" alt="image">
+                        <div class="widget-image-content text-center">
+                            
+                                <h1 class="widget-heading text-light"><strong>Episode 3</strong></h1>
+                                 <h2 class="widget-heading text-light-op"><em>Web Scraping - Functionalities for Scraping Project</em></h2>
+                            
+                                <h4 class="widget-heading text-light-op"><em>Functionalities for Scraping Project</em></h4>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-6">
+                  <!-- Intro Category -->
+                  <div class="widget">
+                     <div class="widget-content widget-content-full border-bottom">
+                        <div class="row text-center">
+                            <a href="/courses/">
+                                <div class="col-xs-12 push-inner-top-bottom border-right">
+                                    <h3 class="widget-heading">
+                                        <i class="gi gi-group gi-user themed-color-social push"></i>
+                                        <br>
+                                        <small>
+                                            Check out more <strong>Courses </strong>
+                                        </small>
+                                    </h3>
+                                </div>
+                            </a>
+                        </div>
+                     </div>
+                     <div class="widget-content">
+                        <h4 style="text-align: left; padding-left: 10px">About this video</h4>
+                        <pre>IMPORTANT POINT TO READ BEFORE THE VIDEO:
+Throughout this tutorial, I teach how to scrape the website 
+from the previous episode every 10 minutes, please avoid using while True without time.sleep(some_time), 
+because you do not want to be considered as a bot who tries to attack a 
+website by requesting without breathing!
+
+On this one, we will turn the program from the previous episode to a one 
+that could be useful, by prettifying it and make that more dynamic.
+The functionalities we will add:
+ - Show a nicer output of the results
+ - Option to filter out jobs that do not meet some skills that are required.
+ - Scraping the website every n minutes
+ - Writing the results to separated text files.</pre>
+                     </div>
+                  </div>
+                  <!-- END Intro Category -->
+               </div>
+               <div class="col-lg-6">
+                  <div class="widget">
+                     <div class="widget-content widget-content-full border-bottom">
+                        <div class="row text-center">
+                            <a href="" onclick='openInNewTab("https://www.youtube.com/watch?v=t0we0j-yIvo")'>
+                                <div class="col-xs-12 push-inner-top-bottom border-left">
+                                    <h3 class="widget-heading"><i style="color:#ff0000" class="gi gi-facetime_video push"></i> <br><small><strong>Watch</strong> on Youtube</small></h3>
+                                </div>
+                            </a>
+                        </div>
+                     </div>
+                     <div class="widget-content">
+                         <iframe width="560" height="318" src="https://www.youtube.com/embed/t0we0j-yIvo"
+                                 allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                                 picture-in-picture" allowfullscreen>
+                         </iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- END Forum -->
+         <!-- Topics -->
+         
+         <div class="tab-pane" id="18_code">
+            <div class="row">
+                
+                     <div class="row text-center">
+    <div class="col-lg-12">
+        <h1 class="text-dark animation-fadeInQuick2"><strong>Feeling Lost?</strong></h1>
+        <h2 class="text-muted animation-fadeInQuick2"><em>We sorry but nothing to display on this page</em></h2>
+    </div>
+</div>
+
+                
+            </div>
+         </div>
+         
+         <div class="tab-pane" id="18_exercise">
+            <div class="row">
+                
+                     <div class="row text-center">
+    <div class="col-lg-12">
+        <h1 class="text-dark animation-fadeInQuick2"><strong>Feeling Lost?</strong></h1>
+        <h2 class="text-muted animation-fadeInQuick2"><em>We sorry but nothing to display on this page</em></h2>
+    </div>
+</div>
+
+                
+            </div>
+         </div>
+         
+         <div class="tab-pane" id="18_answer">
+            <div class="row">
+                
+                     <div class="row text-center">
+    <div class="col-lg-12">
+        <h1 class="text-dark animation-fadeInQuick2"><strong>Feeling Lost?</strong></h1>
+        <h2 class="text-muted animation-fadeInQuick2"><em>We sorry but nothing to display on this page</em></h2>
+    </div>
+</div>
+
+                
+            </div>
+         </div>
+         
+         <!-- END Topics -->
+         <!-- Discussion -->
+         <!-- END Discussion -->
+      </div>
+      <!-- END Tab Content -->
+   </div>
+</div>
+
+<script type="text/javascript">
+    //Media box content OVERRIDES:
+
+    //1) Render the nothing.html if there is no files under one of the types
+    nothingHTML = '<div class="row text-center"> <div class="col-lg-12"> <h1 class="text-dark animation-fadeInQuick2"><strong>Feeling Lost?</strong></h1> <h2 class="text-muted animation-fadeInQuick2"><em>We sorry but nothing to display on this page</em></h2> </div> </div>';
+    
+        videoSourceFileContentID = document.getElementById("18-code-content");
+
+       if (!(videoSourceFileContentID.hasChildNodes())) {
+            videoSourceFileContentID.innerHTML = nothingHTML;
+       }
+    
+        videoSourceFileContentID = document.getElementById("18-exercise-content");
+
+       if (!(videoSourceFileContentID.hasChildNodes())) {
+            videoSourceFileContentID.innerHTML = nothingHTML;
+       }
+    
+        videoSourceFileContentID = document.getElementById("18-answer-content");
+
+       if (!(videoSourceFileContentID.hasChildNodes())) {
+            videoSourceFileContentID.innerHTML = nothingHTML;
+       }
+    
+
+</script>
+
+            
+        
+    </div>
+</div>
+<!-- END Page Content
+
+                </div>
+                <!-- END Main Container -->
+            </div>
+            <!-- END Page Container -->
+        </div>
+        <!-- END Page Wrapper -->
+
+        <!-- jQuery, Bootstrap, jQuery plugins and Custom JS code -->
+        <script src="/static/main/js/vendor/jquery-2.2.4.min.js"></script>
+        <script src="/static/main/js/vendor/bootstrap.min.js"></script>
+        <script src="/static/main/js/plugins.js"></script>
+        <script src="/static/main/js/app.js"></script>
+
+        <!-- IMPORT MEDIA JS -->
+        <!-- TODO: TRY TO MOVE THIS IMPORT INTO MEDIABOX.HTML BECAUSE IT DOES NOT NEED TO BE LOADED IN EACH TEMPLATE -->
+        <script src="/static/main/js/pages/appMedia.js"></script>
+        <script>$(function(){ AppMedia.init(); });</script>
+        <!-- END IMPORT MEDIA -->
+
+        <!-- IMPORT Dashboard JS -->
+        <!-- TODO: TRY TO MOVE THIS IMPORT INTO MEDIABOX.HTML BECAUSE IT DOES NOT NEED TO BE LOADED IN EACH TEMPLATE -->
+        <script src="/static/main/js/pages/readyDashboard.js"></script>
+        <script>$(function(){ ReadyDashboard.init(); });</script>
+        <!-- END IMPORT MEDIA -->
+
+        <!-- Scripts for JSC -->
+        <script>
+            function openInNewTab(url)
+            {
+                var win = window.open(url, '_blank');
+                win.focus();
+            }
+        </script>
+        <!-- END Scripts for JSC -->
+    </body>
+</html>
