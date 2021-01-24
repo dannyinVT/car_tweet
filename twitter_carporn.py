@@ -3,6 +3,7 @@
 from bs4 import BeautifulSoup as soup
 from requests import get
 import requests
+import os
 import praw
 import time
 
@@ -37,17 +38,14 @@ def get_links():
             img_list.append(sub.url)
             print(img_list)
             p = requests.get(sub.url)
-            with open('image1.jpg', 'wb') as h:
+            with open(r'posts\image_' + str(sub) + '.jpg', 'wb') as h:
                 h.write(p.content)
 
-    for img in enumerate(img_list, 1):
-        filename = '{}.jpg'.format(img)
-        with open(filename, 'wb') as h:
-            p = requests.get(sub.url)
-            h.write(p.content)
 
 get_links()
 
+
+# Write the objects from the list into separate files as they're already named.
 
 
 
