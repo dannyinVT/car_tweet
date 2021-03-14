@@ -5,10 +5,10 @@ import os
 import random
 
 
-api = twitter.Api(consumer_key='eO5RVypGHgOMlIDHIAENn8xsN',
-                  consumer_secret='I9qGC2GXKtqIhf2iKDgsel3uybTgPOqV7Bdxd0k4a3vyUkuAv5',
-                  access_token_key='1353383761686142981-2Jt2vNq22vUKo2bNJV3iD3u7LUrFMJ',
-                  access_token_secret='dAhBnzyzFd7XatjLnCRNXejmp79e1J95VJCfOxPZ4VYBT')
+api = twitter.Api(consumer_key='insert key',
+                  consumer_secret='secret',
+                  access_token_key='token',
+                  access_token_secret='token secret')
 
 
 
